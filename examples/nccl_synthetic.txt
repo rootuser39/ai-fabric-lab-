@@ -1,0 +1,6 @@
+# SYNTHETIC FIXTURE. Invented test numbers, NOT an NVIDIA hardware benchmark.
+# Classic nccl-tests format only. Two modes: out-of-place, then in-place.
+# size count type redop root time algbw busbw #wrong time algbw busbw #wrong
+# (B) (elements) (datatype) (op) (rank) (us) (GB/s) (GB/s) (count) (us) (GB/s) (GB/s) (count)
+8 2 float sum -1 10.00 0.00 0.00 0 10.00 0.00 0.00 0
+1048576 262144 float sum -1 10.00 104.86 160.00 0 10.00 104.86 160.00 0
