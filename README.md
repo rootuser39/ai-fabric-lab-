@@ -1,5 +1,33 @@
 # AI Fabric Lab
 
+**Understand the network beneath distributed AI. Predict. Run. Measure. Explain.**
+
+## Start with the tested experiment suite
+
+New: deterministic incast experiments, a classic NCCL log reader, 18 unit tests,
+and a hands-on workshop. Python 3.10+; no third-party packages or GPU required.
+
+```bash
+python -m unittest discover -s tests -v
+python -m fabriclab suite
+python -m fabriclab nccl examples/nccl_synthetic.txt
+```
+
+- [Start here: experiments and expected results](docs/START_HERE.md)
+- [45-minute community workshop](docs/WORKSHOP.md)
+- [Model assumptions and limits](docs/MODEL.md)
+- [Path to real NVIDIA measurements](docs/HARDWARE_VALIDATION.md)
+- [Community execution roadmap](docs/COMMUNITY.md)
+- [Verification record](docs/VERIFICATION.md)
+
+**Evidence boundary:** these new congestion results are synthetic. The NCCL
+fixture is invented parser-test data. No NVIDIA hardware performance, existing
+community adoption, NVIDIA affiliation or program acceptance is claimed.
+Implementation and documentation were AI-assisted and locally tested; maintainer
+review and independent reproduction remain important.
+
+## Original project overview
+
 A practical systems lab for understanding the infrastructure beneath distributed AI.
 
 This repository focuses on the network and systems behavior that determines whether large-scale GPU workloads run efficiently or collapse under congestion, synchronization delay, packet loss, or poor topology decisions.
@@ -76,3 +104,4 @@ python labs/allreduce_model.py
 ## Status
 
 Active research and experimentation repository. The goal is operational understanding, not vendor brochure memorization.
+
